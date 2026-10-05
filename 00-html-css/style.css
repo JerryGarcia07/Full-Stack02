@@ -440,6 +440,13 @@ article {
   }
 }
 
-#boton-importante {
+/* #boton-importante {
   background: #09f;
+} */
+
+.button-apply-job {
+  &.ispplied {
+    background: #4caf50;
+    pointer-events: none;
+  }
 }
