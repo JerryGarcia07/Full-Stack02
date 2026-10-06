@@ -384,6 +384,7 @@ article {
     margin: 0;
 
     display: flex; /* valor original */
+    justify-content: space-between;
     align-items: start;
     gap: 1rem;
 
@@ -450,3 +451,61 @@ article {
     pointer-events: none;
   }
 }
+
+.jobs-oferta {
+  padding-left: 5rem;
+  margin-top: 2rem;
+}
+
+.jobs-oferta > .oferta-header {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: #718096;
+  }
+}
+
+.oferta-contenido {
+  color: var(--text-secondary);
+  h2 {
+    padding: 1.5rem 0 0.5rem 0;
+    color: #fff;
+  }
+  p {
+    line-height: 1.625;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0.5rem;
+    display: flex;
+  }
+  svg {
+    padding: 0 0.5rem 0 0;
+  }
+}
+
+.oferta-aplicar {
+  width: 100%;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .oferta-contenido:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+} */

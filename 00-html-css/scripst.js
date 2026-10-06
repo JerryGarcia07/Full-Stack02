@@ -17,5 +17,18 @@ jobsListenSections?.addEventListener("click", function (event) {
     element.textContent = "!Aplicado¡";
     element.classList.add("ispplied");
     element.disabled = true;
+    window.location.href = "oferta.html";
+  }
+});
+
+const filter = document.querySelector("#filter-location");
+const mensaje = document.querySelector("#filter-selected-value");
+filter.addEventListener("change", function () {
+  const selecvalue = filter.value;
+
+  if (selecvalue) {
+    mensaje.textContent = `has selecionado: ${selecvalue}`;
+  } else {
+    mensaje.textContent = ``;
   }
 });
