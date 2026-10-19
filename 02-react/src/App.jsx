@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Empleado />
       <Footer />
     </>
   );
